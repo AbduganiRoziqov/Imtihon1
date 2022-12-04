@@ -1,0 +1,171 @@
+.container{
+    .section1{
+        .showcase1 {
+            margin-top: 100px;
+            background: #003459;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 50px 0px;
+        
+            &__left {
+                width: 50%;
+                // padding-left: 10%;
+                position: relative;
+                .one{
+                    font-size: 55px;
+                    word-spacing: 15px;
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+        
+             
+         
+                h2 {
+                    font-size: 48px;
+                    width: 100%;
+                    padding: 10px 0px;
+                    margin: 0;
+                }
+        
+                &__text {
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                    color: white;
+                }
+        
+                &__matn {
+                    display: flex;
+                    column-gap: 20px;
+                    align-items: center;
+        
+                    img {
+                        height: 20px;
+                    }
+        
+                    a {
+                        font-size: 17px;
+                        display: inline-block;
+                        padding: 6px 15px;
+                        border-radius: 20px;
+                        color: inherit;
+                        background-color: transparent;
+                        z-index: 10;
+                        border:1px solid blue;
+                        padding: 10px 30px;
+                        &:hover {
+                            background: grey;
+                            color: white;
+                            text-decoration: none;
+                            
+                        }
+                    }
+        
+                    a:nth-child(1) {
+                        color: white;
+                        background: grey;
+        
+                        &:hover {
+                            background:#001a4d ;
+                            color: white;
+                        }
+                    }
+                    a:nth-child(2) {
+                        color: white;
+                        background:  #001a4d;
+        
+                        &:hover {
+                            background: grey;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        
+            &__right {
+                width: 50%;
+                z-index: 70;
+        
+                img {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .showcase1 {
+        flex-direction: column;
+        padding: 0;
+
+        &__left {
+            width: 100%;
+            order: 1;
+            align-items: center;
+            vertical-align: middle;
+
+           
+
+            h2 {
+                font-size: 38px;
+                width: 100%;
+            }
+
+            &__text {
+                width: 90%;
+            }
+        }
+
+        &__right {
+            width: 100%;
+            order: 2;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .showcase1 {
+        // background-color: greenyellow;
+        &__left {
+            .one{
+                p{
+                    font-size: 10px;
+                }
+            }
+            p {
+                font-size: 30px;
+            }
+
+            &__text {
+                width: 100%;
+                // background-color: red;
+                padding-top: 20px;
+            }
+
+            &__matn {
+                flex-direction: column;
+                row-gap: 10px;
+
+                img {
+                    display: none;
+                }
+
+                ;
+            }
+        }
+
+        &__right {
+            width: 100%;
+            order: 2;
+            height: 200px;
+          
+        }
+    }
+}

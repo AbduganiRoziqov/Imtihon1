@@ -1,0 +1,127 @@
+.container{
+
+    .section{
+        
+        z-index: 99;
+        p{
+            color: #003459;
+            margin-top: 25px;
+        }
+        .title{
+            h2{
+                color: #003459;
+            }
+            display: flex;
+            justify-content: space-between;
+            a{
+                font-size: 17px;
+                display: inline-block;
+                padding: 6px 15px;
+                border-radius: 20px;
+                color: #003459;
+                z-index: 10;
+                border: 1px solid #003459;;
+                padding: 8px 30px;
+                &:hover {
+                    background:  #003459;
+                    color: red;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        
+            .area{
+                padding-top: 30px;
+                .infor-puppys{
+                    // padding: 0px 50px;
+                    // background-color:lightgrey;
+                    display: grid;
+                    gap: 20px;
+                    grid-template-columns: repeat(4,24%);
+                    .infor-puppy{
+                        border-radius: 10px;
+                        width: 100%;
+                        background-color: white;
+                        box-shadow: 0px 4px 28px -20px rgba(0, 0, 0, 0.8);
+                        img{
+                            border-radius: 10px;
+                        }
+                        .malumot1{
+                            padding: 15px;
+                            h3{
+                                font-size: 16px;
+                                padding-bottom: 10px;
+                                color: #00171F;
+                            }
+                          
+                            p{
+                                font-size: 15px;
+                                padding-bottom: 20px;
+                                color: #65665C;
+                                
+                            }
+                         
+                        }
+                    }
+                    .infor-puppy > img{
+                        width: 100%;
+                    }
+                }
+              
+            }
+        
+       
+
+    }
+    
+}
+@media (max-width:1024px){
+    .container{
+        .section{
+            .area{
+               
+                .infor-puppys{
+                    display: grid;
+                    grid-template-columns: repeat(2,48%);
+                    justify-content: space-between;
+                    row-gap: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .container{
+        .section{
+            .area{
+                h2{
+                    font-size: 37px;
+                }
+                .infor-puppys{
+                    display: grid;
+                    grid-template-columns: repeat(2,48%);
+                    row-gap: 50px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:400px) {
+    .container{
+        .section{
+            .area{
+                h2{
+                    font-size: 37px;
+                }
+                .infor-puppys{
+                    display: grid;
+                    grid-template-columns: repeat(2,48%);
+                    row-gap: 50px;
+                }
+            }
+        }
+    }
+   
+}
+
